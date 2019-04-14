@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|PT+Sans|Raleway|Roboto');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#main-section {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+#ms-wallpaper {
+  background-image: linear-gradient(to bottom left, #1E1E1E, #000000);
+  position: absolute;
+  height: 90vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.p1 {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  z-index: 3;
+  transition: 4s;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 70px;
+  position: absolute;
+  left: 7vw;
+  z-index: 2;
+  color: white;
+  top: 57vh;
+}
+
+.desc {
+  font-size: 30px;
+  position: absolute;
+  left: 7vw;
+  z-index: 2;
+  color: white;
+  top: 65vh;
+  line-height: 60px;
+}
+
+#buy-btn {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  font-size: 22px;
+  background-color: #34E262;
+  top: 86vh;
+  height: auto;
+  width: auto;
+  color: white;
+  padding-bottom: 18px;
+  z-index: 4;
+  padding-top: 18px;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: .3s;
+
+}
+
+#buy-btn:hover {
+  background-color: #19B543;
+  cursor: pointer;
+}
+
+#navbar {
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  z-index: 5;
+  color: white;
+  transition: .4s;
+
+}
+
+#buttons {
+  width: auto;
+  height: auto;
+  margin-top: 30px;
+  float: right;
+  margin-right: 3vw;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.button {
+  display: inline;
+  padding-right: 25px;
+  padding-left: 25px;
+  opacity: .7;
+
+}
+
+#trade-btn {
+  border: 1px solid white;
+  padding-top: 18px;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-left: 17px;
+  padding-bottom: 18px;
+  border-radius: 4px;
+  transition: .5s;
+
+}
+
+#trade-btn:hover {
+  background-color: white;
+  color: black;
+  opacity: 1;
+}
+
+#overview {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+#logo {
+  font-size: 25px;
+  float: left;
+  font-weight: bold;
+  margin-left: -120px;
+  margin-top: 20px;
+  transition: .5s;
+}
+
+.button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#overview-header {
+  color: white;
+  font-size: 60px;
+  top: 17vh;
+
+}
+
+
+#overview-container {
+  position: absolute;
+  font-size: 30px;
+  line-height: 50px;
+  width: 78vw;
+  height: 55vh;
+  top: 34vh;
+  left: 11vw;
+  color: white;
+}
+
+.c-image {
+  position: absolute;
+  width: 8vw;
+  left: 2vw;
+  height: auto;
+
+}
+
+.c-header {
+  color: white;
+  position: absolute;
+  font-size: 40px;
+  left: 11vw;
+  top: 7vh;
+  font-weight: bold;
+
+}
+
+.c-text {
+  position: absolute;
+  top: 25vh;
+  left: 3vw;
+  font-size: 30px;
+  width: 20vw;
+  font-weight: lighter;
+
+}
+
+#lock {
+  filter: invert(1) grayscale(100%) brightness(1.4);
+}
+
+.group {
+  height: 55vh;
+  width: 26vw;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+}
+
+.u {
+  position: absolute;
+  top: 20vh;
+  background-color: white;
+  width: 18vw;
+  left: 3vw;
+  filter: brightness(1.5);
+}
+
+#b2 {
+  left: 26vw;
+}
+
+#b3 {
+  left: 52vw;
+}
+
+#price {
+  position: absolute;
+  top: 61vh;
+  left: 76.5vw;
+  z-index: 3;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.muted {
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+  opacity: .7;
+
+}
+
+#price-desc {
+  position: absolute;
+  top: 57vh;
+  left: 76.5vw;
+  z-index: 3;
+}
+
+#t-wrapper {
+  width: 100vw;
+  position: absolute;
+}
+
+#o-wallpaper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top right, #113E77, #24282C);
+}
+
+#contact {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+#c-wallpaper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #620038, #1E1E1E);
+}
+
+#c-header {
+  position: absolute;
+  width: auto;
+  top: 27vh;
+  z-index: 4;
+
+}
+
+#c-text {
+  position: absolute;
+  text-decoration: none;
+  font-size: 40px;
+  z-index: 4;
+  top: 80vh;
+}
+
+a {
+  z-index: 4;
+  text-decoration: none;
+  color: white;
+}
+
+#email {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 40vh;
+}
+
+img {
+  z-index: 4;
+}
+
+
+#animation {
+  position: absolute;
+  z-index: 4;
+  width: 30vw;
+  left: 35vw;
+  top: 15vh;
+  opacity: .6;
+}

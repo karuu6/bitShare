@@ -1,0 +1,118 @@
+ @import url('https://fonts.googleapis.com/css?family=Heebo');
+
+body {
+    background: #1F1F24;
+    text-align: center;
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color:yellow;
+}
+
+h1 {
+  font-size: 40px;
+
+}
+.bar-wrapper {
+    height: 300px;
+    position: relative;
+}
+.bar {
+    position: relative;
+    bottom: 0;
+    width: 5px;
+    display: inline-block;
+    border: 1px solid red;
+    height: 5px;
+    border-bottom: 3px solid #fff;
+}
+
+#canvas {
+  margin-top: 20vh;
+  width: 26vw;
+  height: 48vh;
+  z-index: 2;
+}
+
+.abs-center{
+	margin: auto;
+	position: fixed;
+	top:0; right:0; bottom:0; left:0;
+}
+/*Container for audio player*/
+#audioplayer{
+	width: 26vw;
+	height: 40px;
+	margin: auto;
+	border: solid;
+}
+/* Play/Pause Button */
+#pButton{
+	height:40px;
+	width: 40px;
+	border: none;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	float:left;
+	outline:none;
+
+}
+/*Classes for play/pause button background*/
+.play{
+  background: url('https://raw.githubusercontent.com/alexanderkatz/HTML5-Audio/master/img/play.png');
+  filter: invert(1);
+}
+.pause{
+  background: url('https://raw.githubusercontent.com/alexanderkatz/HTML5-Audio/master/img/pause.png');
+  filter: invert(1);
+}
+
+#timeline{
+	width: 90%;
+	height: 20px;
+	background: white;
+	margin-top: 10px;
+	float: left;
+	border-radius: 15px;
+}
+/*Grabable Playhead*/
+#playhead{
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	margin-top: 1px;
+	background: grey;
+}
+
+#main-wrapper {
+  margin-top: 7vh;
+  width: 30vw;
+  position: absolute;
+  left: 20vw;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+}
+
+#art {
+  position: absolute;
+  align-items: center;
+  width: 20vw;
+  z-index: 1;
+  left: 5vw;
+  filter: opacity(.8);
+}
+
+#stats {
+  position: absolute;
+  left: 50vw;
+  width: 30vw;
+  top: 7vh;
+  color: white;
+  border-right: 4px solid white;
+  height: 88vh;
+}

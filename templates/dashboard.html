@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lumen/bootstrap.min.css'>
+    <style>
+      .songs {
+        width: 80vw;
+      }
+      .porfolios { width: 70vw; }
+      #message { width: 60vw; }
+      #nav { position: fixed; width: 100vw; }
+      #btns { margin-left: 76vw; }
+      #btn { margin-right: 30px; }
+      #art {
+        height: 80px;
+      }
+      p {
+        margin-top: 20px;
+      }
+    </style>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav"> <a class="navbar-brand" href="/">BIT SHARE</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarColor01" > <ul class="navbar-nav mr-auto" id='btns'> <li class="nav-item" id='btn'> <a class="nav-link" href="/upload">Upload</a> </li> <li class="nav-item" id='btn'> <a class="nav-link" href="/logout">Logout</a> </li> </ul> </div> </nav>
+    <center>
+      <br> <br> <br><br><br>
+      <h1>
+        Welcome to Your Dashboard
+        <small class="text-muted">{{ email }}</small>
+      </h1>
+      <br> <br> <br>
+      <h3>Uploaded Songs</h3>
+      <br><br>
+      <div class='songs'>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Date Created</th>
+              <th scope="col">Views</th>
+              <th scope="col">Web ID</th>
+              <th scope="col">Art</th>
+              <th scope="col">Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for song in songs %}
+              <tr class="table-primary">
+
+                <th scope="row"><p>{{ song['title'] }}<p></th>
+                <td><p>{{ song['date'] }}<p></td>
+                <td><p>{{ song['views'] }}<p></td>
+                <td><p><a href="/song/{{ song['id'] }}">{{ song['id'] }}</a><p></td>
+                <td><img src={{song['art']}} id='art'></td>
+                <td><p><a href="/delete/{{ song['id'] }}">Delete</a><p></td>
+              </tr>
+
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </center>
+  </body>
+</html>
